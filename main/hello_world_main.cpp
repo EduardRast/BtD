@@ -9,7 +9,7 @@
 
 extern "C" void app_main()
 {
-    
+    std::cout<<std::endl;
     printf("Hello World \n\n");
     printf("External function - ");
     printf("%i", function_test());
