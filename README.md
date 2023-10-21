@@ -9,4 +9,6 @@
 
 3. Configure project: 'idf.py set-target esp32  idf.py menuconfig'
 
-4. Build and flash: idf.py build + idf.py -p PORT flash
+4. Build and flash: idf.py build + idf.py -p PORT flash //note - do not monitor the port when flashing
+
+5. To see the serial port output from the microcontroller: idf.py monitor PORT //note - baund if different, easier to change in confing files
