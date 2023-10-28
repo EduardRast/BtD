@@ -1,0 +1,35 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /Users/rast/esp/BtD/build/bootloader/esp-idf/esptool_py && /Users/rast/.espressif/python_env/idf5.1_py3.11_env/bin/python /Users/rast/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/rast/esp/BtD/build/bootloader/bootloader.bin
+Bootloader binary size 0x66c0 bytes. 0x940 bytes (8%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main_esp.cpp.obj
+In file included from /Users/rast/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:58,
+                 from /Users/rast/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:70,
+                 from /Users/rast/esp/BtD/main/driver/i2c.h:17,
+                 from /Users/rast/esp/BtD/main/main_esp.cpp:11:
+/Users/rast/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:721: warning: "UNTESTED_FUNCTION" redefined
+  721 | #define UNTESTED_FUNCTION() do{ esp_rom_printf("Untested FreeRTOS function %s\r\n", __FUNCTION__); configASSERT(false); } while(0)
+      | 
+In file included from /Users/rast/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:64,
+                 from /Users/rast/esp/BtD/main/driver/i2c.h:17,
+                 from /Users/rast/esp/BtD/main/main_esp.cpp:11:
+/Users/rast/esp/BtD/main/freertos/FreeRTOSConfig.h:138: note: this is the location of the previous definition
+  138 | #define UNTESTED_FUNCTION() { ets_printf("Untested FreeRTOS function %s\r\n", __FUNCTION__); configASSERT(false); } while(0)
+      | 
+/Users/rast/esp/BtD/main/main_esp.cpp: In function 'void app_main()':
+/Users/rast/esp/BtD/main/main_esp.cpp:35:9: warning: missing initializer for member 'i2c_config_t::<anonymous>' [-Wmissing-field-initializers]
+   35 |         };
+      |         ^
+/Users/rast/esp/BtD/main/main_esp.cpp:35:9: warning: missing initializer for member 'i2c_config_t::clk_flags' [-Wmissing-field-initializers]
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable main_esp.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.7.dev2
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /Users/rast/esp/BtD/build/main_esp.bin
+[9/9] cd /Users/rast/esp/BtD/build/esp-idf/esptool_py && /Users/rast/.espressif/python_env/idf5.1_py3.11_env/bin/python /Users/rast/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/rast/esp/BtD/build/partition_table/partition-table.bin /Users/rast/esp/BtD/build/main_esp.bin
+main_esp.bin binary size 0x6e7c0 bytes. Smallest app partition is 0x100000 bytes. 0x91840 bytes (57%) free.

@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-/home/rast/esp/BtD/build/CMakeFiles/bootloader
-/home/rast/esp/BtD/build/CMakeFiles/bootloader.rule
-/home/rast/esp/BtD/build/CMakeFiles/bootloader-complete.rule
-/home/rast/esp/BtD/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-/home/rast/esp/BtD/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-/home/rast/esp/BtD/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-/home/rast/esp/BtD/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
-/home/rast/esp/BtD/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-/home/rast/esp/BtD/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-/home/rast/esp/BtD/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/rast/esp/BtD/build/CMakeFiles/bootloader
+/Users/rast/esp/BtD/build/CMakeFiles/bootloader.rule
+/Users/rast/esp/BtD/build/CMakeFiles/bootloader-complete.rule
+/Users/rast/esp/BtD/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/rast/esp/BtD/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/rast/esp/BtD/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/rast/esp/BtD/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/rast/esp/BtD/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/rast/esp/BtD/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/rast/esp/BtD/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
